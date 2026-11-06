@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Power Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>⚡ Smart Home Power Saver</h2>
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#appliances">Appliances</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#reports">Reports</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section id="dashboard">
+        <h1>Smart Home Dashboard</h1>
+        <p class="subtitle">Monitor and manage your home appliances.</p>
+
+        <div class="summary">
+            <div class="summary-card">
+                <span>Total Appliances</span>
+                <h2 id="totalCount">5</h2>
+            </div>
+
+            <div class="summary-card">
+                <span>Appliances ON</span>
+                <h2 id="onCount">0</h2>
+            </div>
+
+            <div class="summary-card">
+                <span>Energy Used Today</span>
+                <h2 id="energyUsed">0 kWh</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="appliances">
+        <div class="section-heading">
+            <div>
+                <h2>My Appliances</h2>
+                <p>Control your household devices</p>
+            </div>
+            <button class="add-btn" onclick="addAppliance()">
+                + Add Appliance
+            </button>
+        </div>
+
+        <div id="applianceList" class="appliance-grid"></div>
+    </section>
+
+    <section id="schedule">
+        <h2>Usage Schedule</h2>
+        <p>Set the daily usage time for your appliances.</p>
+        <div id="scheduleList"></div>
+    </section>
+
+    <section id="reports">
+        <h2>Energy Report</h2>
+        <div class="report-card">
+            <p>Estimated daily electricity consumption</p>
+            <h1 id="reportEnergy">0 kWh</h1>
+            <p id="reportCost">Estimated cost: ₹0</p>
+            <small>Cost is calculated using an example rate of ₹8 per unit. Change it in JavaScript if needed.</small>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Smart Home Power Saver | College Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
